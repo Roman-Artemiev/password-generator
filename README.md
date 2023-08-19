@@ -1,6 +1,6 @@
 # password-generator
 <h1 align = "center">
-    <a href="[https://romzez1595.github.io/Montdo/](https://roman-artemiev.github.io/password-generator/)"><img width="700" alt="Password Generator" src="./img/Png/MontdoIntroPhoto.png"></a>
+    <a href="[https://romzez1595.github.io/Montdo/](https://roman-artemiev.github.io/password-generator/)"><img width="700" alt="Password Generator" src="./assets/password-generator-pic.jpg"></a>
     <br>
     <br>
     ⚡️ Password Generator ⚡️
