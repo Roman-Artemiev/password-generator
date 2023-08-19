@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+</head>
+<body>
+    <section class="password-generator">
+        <div class="container">
+            <div class="password">
+                <div class="password__input">
+                    <input class="password__result" id="result" type="text">
+                </div>
+
+                <div class="password__line"></div>
+
+                <div class="password__function">
+                    <img class="password__icon" id="copy" src="./img/Svg/copy-password__icon.svg" alt="Copy">
+                    <img class="password__icon" id="change" src="./img/Svg/change-password__icon.svg" alt="Change">
+                </div>
+            </div>
+
+            <div class="length-container">
+                <div class="length__title">
+                    <h2 class="length__title-text">
+                        Password length:
+                    </h2>
+                    <h3 class="length__value" id="lengthCounter">
+                        10
+                    </h3>
+                </div>
+
+                <div class="length__input-container">
+                    <div class="length__button length__minus" id="lengthMinus">
+                        <img class="length__icon" src="./img/Svg/length-plus__icon.svg" alt="Plus">
+                    </div>
+
+                    <input class="length__input" id="length" type="range" min="6" max="50" value="10">
+
+                    <div class="length__button length__plus" id="lengthPlus">
+                        <img class="length__icon" src="./img/Svg/length-minus__icon.svg" alt="Minus">
+                    </div>
+                </div>
+            </div>
+
+            <div class="characters-container">
+                <h2 class="characters__title">
+                    Characters used:
+                </h2>
+
+                <div>
+                    <div class="user__setting">
+                        <input class="user__setting-input" checked type="checkbox" id="uppercase">
+                        <label class="user__setting-label" for="uppercase">Uppercase (ABS)</label>
+                    </div>
+
+                    <div class="user__setting">
+                        <input class="user__setting-input" checked type="checkbox" id="lowercase">
+                        <label class="user__setting-label" for="lowercase">Lowercase (abs)</label>
+                    </div>
+
+                    <div class="user__setting">
+                        <input class="user__setting-input" checked type="checkbox" id="numbers">
+                        <label class="user__setting-label" for="numbers">Numbers (123)</label>
+                    </div>
+
+                    <div class="user__setting">
+                        <input class="user__setting-input" type="checkbox" id="symbols">
+                        <label class="user__setting-label" for="symbols">Symbols ($#&)</label>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="generate-password__btn">
+                <button id="generate">
+                    Generate Password
+                </button>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
